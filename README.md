@@ -1,4 +1,4 @@
-# geemap_docker
+# Docker Demo
 
 This is an Ubuntu Image that includes the geemap package and more that are used in GIS applications. You can find the full package list below:
 
