@@ -1,6 +1,6 @@
 # Docker Demo
 
-This is an Ubuntu Image that includes the geemap package and more that are used in GIS applications. You can find the full package list below:
+This is an Ubuntu Image that includes the common GIS python packages. You can find the full package list below:
 
 *light tag:*
 
