@@ -24,7 +24,7 @@ RUN mkdir geemap
 RUN mkdir tests
 
 # Copying tests
-COPY /tests/test_geemap.py /tests
+COPY /tests/test_import.py /tests
 COPY /tests/run_tests.sh /tests
 
 # Giving permission to tests to run
