@@ -49,7 +49,7 @@ I highly recommend this tutorial that explains almost everything you need and ev
 
 Pull the image:
 
-```docker pull bkavlak/geemap:latest```
+```docker pull bkavlak/dockerdemo:latest```
 
 And, see you have it in your local machine:
 
@@ -69,7 +69,7 @@ I highly recommend you add a volume to the container where you can transfer file
 
 After running the image you'll see a command as below:
 
-```root@00dda2cb5ece:/geemap#```
+```root@00dda2cb5ece:/dockerdemo#```
 
 This means that you are in the container.
 
