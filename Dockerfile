@@ -20,7 +20,7 @@ RUN pip3 --no-cache-dir install --upgrade setuptools && \
     pip3 --no-cache-dir install -r requirements.txt
 	
 # Making home & test folders
-RUN mkdir geemap
+RUN mkdir dockerdemo
 RUN mkdir tests
 
 # Copying tests
@@ -28,7 +28,7 @@ COPY /tests/test_import.py /tests
 COPY /tests/run_tests.sh /tests
 
 # Giving permission to tests to run
-RUN chmod +x /tests/test_geemap.py
+RUN chmod +x /tests/test_import.py
 RUN chmod +x /tests/run_tests.sh
 
 WORKDIR "dockerdemo"
