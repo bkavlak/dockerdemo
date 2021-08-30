@@ -7,14 +7,14 @@ ENV DEBIAN_FRONTEND=noninteractive
 COPY install_dependencies.sh /
 RUN chmod +x /install_dependencies.sh
 
-# install dependencies - making some changes here to test 
+# Install dependencies
 RUN ./install_dependencies.sh
 
+# Update the system
 RUN apt-get update
-
 RUN /usr/bin/python3 -m pip install --upgrade pip
 
-# install python package
+# Install python package
 COPY requirements.txt /
 RUN pip3 --no-cache-dir install --upgrade setuptools && \
     pip3 --no-cache-dir install wheel && \
@@ -24,7 +24,7 @@ RUN pip3 --no-cache-dir install --upgrade setuptools && \
 RUN mkdir dockerdemo
 RUN mkdir tests
 
-# Copying tests
+# Copying test files
 COPY /tests/test_import.py /tests
 COPY /tests/run_tests.sh /tests
 
