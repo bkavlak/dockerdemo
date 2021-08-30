@@ -1,5 +1,3 @@
-# Testing git action
-
 # Build & Push Image
 FROM ubuntu:20.04
 ENV LANG=C.UTF-8
